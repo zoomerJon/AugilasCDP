@@ -279,24 +279,25 @@ a {
   }
   .mid-subsection-headings {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* flex-direction: column; */
   }
   .side-heading-right {
     font-size: 22px;
     font-weight: 550;
     margin-bottom: 20px;
-    margin-top: 0;
-    margin-right: 0;
-    width: 100%;
+    margin-top: 40px;
+    margin-right: 5vw;
+    width: 40vw;
   }
   .side-heading-left {
     color: black;
     font-size: 24px;
     margin-bottom: 20px;
-    margin-left: 0;
+    margin-left: 5vw;
     margin-right: 0;
     margin-top: 40px;
-    width: 100%;
+    width: 40vw;
   }
   .side-heading-right-large {
     font-size: 72px;
@@ -320,7 +321,7 @@ a {
   }
   .top-section img {
     margin-top: 40px;
-    width: 80vw;
+    width: 90vw;
   }
   .mid-subsection-img img {
     width: 100vw;
