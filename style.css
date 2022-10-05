@@ -73,7 +73,7 @@ a {
 
 .top-section img {
   justify-content: center;
-  width: 65vw;
+  width: 40vw;
 }
 
 .egroup-intro {
@@ -291,7 +291,8 @@ a {
     font-size: 40px;
   }
   .top-section img {
-    width: 90vw;
+    margin-top: 20px;
+    width: 80vw;
   }
   .mid-subsection-img img {
     width: 100vw;
