@@ -102,7 +102,7 @@ a {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  width: 55vw;
+  width: 60vw;
 }
 
 .egroup-intro img {
@@ -270,9 +270,9 @@ a {
     margin-top: 30px;
   }
   .egroup-intro p {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    width: 90vw;
+    width: 80vw;
   }
   .egroup-intro img {
     width: 80vw;
@@ -320,6 +320,7 @@ a {
     font-size: 40px;
   }
   .top-section img {
+    border-radius: 25px;
     margin-top: 40px;
     width: 90vw;
   }
