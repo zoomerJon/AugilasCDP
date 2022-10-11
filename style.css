@@ -22,6 +22,7 @@ a {
   overflow: hidden;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .logo {
@@ -60,13 +61,13 @@ a {
   /* margin-left: 82vw; */
   /* flex-direction: row-reverse; */
 }
-
 .top-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  /* z-index: 1; */
 }
 .primary-heading {
   display: inline;
@@ -102,7 +103,7 @@ a {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  width: 60vw;
+  width: 65vw;
 }
 
 .egroup-intro img {
@@ -157,12 +158,12 @@ a {
 }
 
 .side-heading-styled {
-  color: #ccc;
+  color: #7b746b;
   font-size: 48px;
   margin-bottom: 0px;
   margin-left: 15vw;
   margin-top: 40px;
-  width: 30vw;
+  width: 35vw;
 }
 
 .side-heading-right {
@@ -185,7 +186,7 @@ a {
 
 .side-heading-right-large {
   color: black;
-  font-size: 80px;
+  font-size: 72px;
   margin-left: 50vw;
   margin-right: 0;
   text-align: right;
@@ -212,7 +213,9 @@ a {
   display: flex;
   justify-content: center;
   /* margin-top: 10vh; */
-  width: 100%;
+  height: 300px;
+  /* width: 300px; */
+  /* transform: rotate(-90deg); */
 }
 .scroll-content {
   /* white-space: nowrap;
@@ -223,12 +226,15 @@ a {
   overflow-x: scroll; */
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  /* transform: rotate(90deg); */
+  /* scrollbar-width: thin; */
   -webkit-overflow-scrolling: touch;
 }
 .scroll-content image {
   flex: 0 0 auto;
 }
+
 .bottom-content p {
   color: black;
   font-size: 32px;
@@ -243,8 +249,10 @@ a {
   .middle-heading {
     text-align: center;
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 32px;
+    font-weight: 600;
     color: black;
+    width: 90vw;
   }
   .description {
     margin-top: 40px;
@@ -282,6 +290,10 @@ a {
     justify-content: space-between;
     /* flex-direction: column; */
   }
+  .mid-subsection-text {
+    font-size: 24px;
+    width: 90vw;
+  }
   .side-heading-right {
     font-size: 22px;
     font-weight: 550;
@@ -300,13 +312,12 @@ a {
     width: 40vw;
   }
   .side-heading-right-large {
-    font-size: 72px;
+    font-size: 64px;
     margin-left: 0;
     text-align: left;
     width: 100%;
   }
   .side-heading-styled {
-    color: #aaa;
     font-size: 50px;
     margin-bottom: 20px;
     margin-left: 0;
@@ -327,11 +338,20 @@ a {
   .mid-subsection-img img {
     width: 100vw;
   }
+  .bottom-content p {
+    /* color: black; */
+    font-size: 24px;
+    font-weight: 550;
+    /* margin-bottom: 40px; */
+  }
   .desktop {
     display: none;
   }
   .fixed-btn {
     display: none;
+  }
+  .scroll-content {
+    overflow-x: auto;
   }
 }
 
