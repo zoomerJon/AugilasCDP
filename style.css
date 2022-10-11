@@ -143,11 +143,18 @@ a {
   align-items: center;
   justify-content: center;
 }
+.mid-subsection-img .images {
+  display: flex;
+}
 .mid-subsection-img img {
+  height: 220px;
+  width: 200px;
+}
+/* .mid-subsection-img img {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 70vw;
-}
+} */
 .side-heading-left {
   color: black;
   font-size: 58px;
