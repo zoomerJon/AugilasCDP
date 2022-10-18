@@ -235,10 +235,10 @@ main {
   justify-content: center;
   /* margin-top: 10vh; */
   height: 300px;
-  /* width: 300px; */
   /* transform: rotate(-90deg); */
 }
 .scroll-content {
+  /* width: 300px; */
   /* white-space: nowrap;
   background-color: lightblue;
   color: white;
@@ -375,6 +375,11 @@ main {
   }
   .scroll-content {
     overflow-x: auto;
+  }
+  .scroll-content image {
+    /* flex: 0 0 auto; */
+    width: 200px;
+    height: 200px;
   }
 }
 
