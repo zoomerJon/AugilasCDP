@@ -252,7 +252,7 @@ main {
   /* scrollbar-width: thin; */
   -webkit-overflow-scrolling: touch;
 }
-.scroll-content image {
+.scroll-content img {
   flex: 0 0 auto;
 }
 
@@ -379,7 +379,7 @@ main {
   .scroll-content {
     overflow-x: auto;
   }
-  .scroll-content image {
+  .scroll-content img {
     /* flex: 0 0 auto; */
     width: 200px;
     height: 200px;
