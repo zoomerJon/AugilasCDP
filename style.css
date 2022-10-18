@@ -15,6 +15,7 @@ a {
 
 main {
   position: absolute;
+  /* margin-top: 50px; */
   width: 100%;
 }
 
@@ -58,14 +59,21 @@ main {
 
 .fixed-btn {
   position: fixed;
+  /* background-color: #ccc; */
+  /* opacity: 0.4; */
   /* margin-right: 20px; */
   margin-top: 80px;
   display: flex;
   justify-content: flex-end;
-  width: 99%;
+  width: 100%;
   /* margin-left: 82vw; */
   /* flex-direction: row-reverse; */
   z-index: 2;
+}
+.fixed-btn a {
+  margin-right: 10px;
+  /* opacity: 0.9; */
+  z-index: 3;
 }
 .top-section {
   display: flex;
@@ -119,7 +127,7 @@ main {
 }
 
 .mid-section {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,11 +166,20 @@ main {
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
   justify-content: space-around;
 }
+.mid-subsection-imgs .testimony {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 20vw;
+}
 .mid-subsection-imgs img {
-  height: 220px;
-  width: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
+  height: 270px;
+  width: 250px;
 }
 /* .mid-subsection-img img {
   margin-top: 30px;
@@ -172,7 +189,7 @@ main {
 .side-heading-left {
   color: black;
   font-size: 58px;
-  margin-top: 10vh;
+  margin-top: 40px;
   margin-left: 15vw;
   margin-right: 0;
   width: 30vw;
@@ -191,7 +208,7 @@ main {
   color: #7b746b;
   font-weight: 550;
   font-size: 42px;
-  margin-top: 20vh;
+  margin-top: 80px;
   margin-right: 15vw;
   text-align: right;
   width: 25vw;
@@ -213,11 +230,44 @@ main {
   text-align: right;
   width: 25vw;
 }
+.groups-container {
+  display: flex;
+}
+.top-groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 80px 0;
+}
+.top-groups img {
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+  box-shadow: 3px 3px 3px 3px #ccc;
+}
+.top-groups div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-groups a {
+  /* display: inline; */
+  width: 50%;
+}
+.top-groups .btn-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
 .small-heading {
   color: black;
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 40px;
   margin-top: 40px;
+  text-align: center;
+  width: 30vw;
 }
 .btn {
   cursor: pointer;
@@ -228,37 +278,47 @@ main {
   border: none;
   border-radius: 10px;
   font-size: 24px;
+  box-shadow: 2px 2px 2px 2px #ccc;
   /* height: 60px; */
 }
 .scroll-container {
   display: flex;
-  justify-content: center;
-  /* margin-top: 10vh; */
   height: 300px;
-  /* transform: rotate(-90deg); */
+  /* justify-content: center; */
 }
 .scroll-content {
-  /* width: 300px; */
-  /* white-space: nowrap;
-  background-color: lightblue;
-  color: white;
-  border: 1px solid black;
-  height: 300px;
-  overflow-x: scroll; */
   display: flex;
-  flex-wrap: nowrap;
-  /* overflow-x: auto; */
-  /* transform: rotate(90deg); */
-  /* scrollbar-width: thin; */
+  /* flex-wrap: nowrap; */
+  width: 100vw;
+  /* flex-direction: row; */
+  justify-content: space-around;
   -webkit-overflow-scrolling: touch;
 }
 .scroll-content img {
-  flex: 0 0 auto;
+  /* position: absolute; */
+  box-shadow: 3px 3px 3px 3px #ccc;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  /* flex: 0 0 auto; */
+}
+.scroll-content .pic1 {
+  /* position: absolute; */
+  /* margin-bottom: 80px; */
+  /* padding-bottom: 40px; */
+  border-radius: 10px;
+  /* flex: 0 0 auto; */
 }
 
 .bottom-content p {
   color: black;
   font-size: 32px;
+  margin-bottom: 40px;
+}
+.bottom-content div {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
 }
 /* .scroll-content {
@@ -358,8 +418,8 @@ main {
   }
   .mid-subsection-imgs img {
     aspect-ratio: auto 506 / 548;
-    width: 50px;
-    height: 60px;
+    width: 60px;
+    height: 65px;
   }
   .bottom-content p {
     /* color: black; */
@@ -373,16 +433,35 @@ main {
   .fixed-btn {
     display: none;
   }
-  .scroll-container {
-    height: 200px;
+  .mid-subsection-imgs .testimony {
+    flex-direction: column;
+  }
+  .small-heading {
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-weight: 550;
+    font-size: 26px;
+    width: 90vw;
+  }
+  .top-groups {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .scroll-content {
+    justify-content: start;
     overflow-x: auto;
   }
   .scroll-content img {
-    /* flex: 0 0 auto; */
-    width: 200px;
-    height: 200px;
+    flex: 0 0 auto;
+    border-radius: 0;
+    width: 300px;
+    height: 300px;
+  }
+  .scroll-container {
+    margin-bottom: 40px;
+  }
+  .desktop-pic {
+    display: none;
   }
 }
 
