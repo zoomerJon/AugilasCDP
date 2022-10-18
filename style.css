@@ -373,6 +373,9 @@ main {
   .fixed-btn {
     display: none;
   }
+  .scroll-container {
+    height: 200px;
+  }
   .scroll-content {
     overflow-x: auto;
   }
