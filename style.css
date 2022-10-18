@@ -418,8 +418,10 @@ main {
   }
   .mid-subsection-imgs img {
     aspect-ratio: auto 506 / 548;
-    width: 60px;
-    height: 65px;
+    /* width: 60px;
+    height: 65px; */
+    height: 20vw;
+    width: 20vw;
   }
   .bottom-content p {
     /* color: black; */
