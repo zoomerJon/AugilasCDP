@@ -114,7 +114,7 @@ main {
   color: black;
 }
 
-.egroup-intro p {
+.egroup-intro div {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -247,6 +247,7 @@ main {
 }
 .groups-container {
   display: flex;
+  position: relative;
 }
 .top-groups {
   display: flex;
@@ -254,7 +255,14 @@ main {
   justify-content: space-around;
   width: 100%;
   margin: 80px 0;
+  /* position: absolute; */
 }
+
+/* .top-groups .desktop .right {
+  margin-top: 10vh;
+  position: absolute;
+} */
+
 .top-groups img {
   border-radius: 10px;
   height: 300px;
@@ -275,6 +283,15 @@ main {
   flex-direction: row;
   text-align: center;
   justify-content: center;
+}
+.group-explore {
+  font-weight: 550;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  line-height: 1;
+  font-size: 36px;
+  width: 30vw;
+  text-align: center;
 }
 .small-heading {
   color: black;
@@ -384,9 +401,11 @@ main {
   .egroup-intro {
     margin-top: 10px;
   }
-  .egroup-intro p {
+  .egroup-intro div {
     font-size: 20px;
-    /* text-align: center; */
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
     width: 80vw;
@@ -395,6 +414,9 @@ main {
     margin-bottom: 40px;
     margin-top: 20px;
     width: 80vw;
+  }
+  .mid-subsection {
+    margin-bottom: 0;
   }
   .mid-subsection-headings {
     display: block;
@@ -438,7 +460,7 @@ main {
   .side-heading-styled {
     font-size: 50px;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 0;
     margin-top: 20px;
     width: 100%;
@@ -458,9 +480,9 @@ main {
     border-radius: 25px;
     width: 90vw;
   }
-  .mid-subsection-imgs a {
+  /* .mid-subsection-imgs a {
     font-size: 16px;
-  }
+  } */
   .mid-subsection-imgs img {
     aspect-ratio: auto 506 / 548;
     /* width: 60px;
@@ -469,8 +491,9 @@ main {
     width: 20vw;
   }
   .bottom-content p {
-    /* color: black; */
-    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
     font-weight: 550;
     /* margin-bottom: 40px; */
   }
@@ -483,6 +506,15 @@ main {
   .mid-subsection-imgs .testimony {
     flex-direction: column;
   }
+  .group-explore {
+    font-weight: 550;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 1;
+    font-size: 20px;
+    width: 95vw;
+    text-align: center;
+  }
   .bottom-headings {
     display: block;
     margin-top: 40px;
@@ -490,8 +522,8 @@ main {
   .small-heading {
     margin-bottom: 40px;
     margin-top: 0;
-    font-weight: 550;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 38px;
     width: 90vw;
   }
   .top-groups {
