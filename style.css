@@ -17,21 +17,44 @@ main {
   position: absolute;
   width: 100%;
 }
-
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
 .fixed-btn {
   position: fixed;
-  margin-top: 80px;
+  /* background-color: #ccc;
+  opacity: 0.8; */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  /* margin-top: 80px; */
   display: flex;
   justify-content: flex-end;
   width: 100%;
   z-index: 2;
 }
-
 .fixed-btn a {
+  box-shadow: none;
   margin-right: 10px;
   z-index: 3;
 }
-
+.login {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  /* background-color: #28a745; */
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+}
 .primary-heading {
   display: inline;
   text-align: center;
@@ -273,18 +296,6 @@ main {
   width: 30vw;
 }
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-  color: white;
-  background-color: #28a745;
-  border: none;
-  border-radius: 10px;
-  font-size: 24px;
-  box-shadow: 2px 2px 2px 2px #ccc;
-}
-
 .mid-subsection {
   margin-bottom: 40px;
 }
@@ -430,7 +441,7 @@ main {
   }
   .top-image {
     border-radius: 25px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .top-image img {
     margin-bottom: 10px;
@@ -447,7 +458,13 @@ main {
     display: none;
   }
   .fixed-btn {
-    display: none;
+    justify-content: space-around;
+  }
+  .fixed-btn a {
+    font-size: small;
+  }
+  .top-groups a {
+    width: 70%;
   }
   .mid-subsection-imgs .images {
     /* position: relative; */
@@ -461,8 +478,8 @@ main {
   }
   .mid-subsection-imgs .testimony {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     /* justify-content: flex-start; */
     margin-bottom: 40px;
     text-align: center;
@@ -472,13 +489,14 @@ main {
     color: #000;
     background-color: white;
     border: none;
-    font-size: 16px;
+    font-size: 13px;
     width: 80vw;
   }
   .mid-subsection-imgs img {
+    margin-left: 5px;
     aspect-ratio: auto 506 / 548;
-    height: 45vw;
-    width: 45vw;
+    height: 50vw;
+    width: 50vw;
   }
   .group-explore {
     font-weight: 550;
