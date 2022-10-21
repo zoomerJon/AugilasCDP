@@ -176,7 +176,7 @@ main {
 }
 
 .mid-subsection-imgs .testimony p {
-  background-color: #555;
+  background-color: #777;
   border: 1px solid black;
   border-radius: 10px;
   color: white;
@@ -277,7 +277,10 @@ main {
   text-align: center;
   justify-content: center;
 }
-
+.explore {
+  display: flex;
+  align-items: center;
+}
 .group-explore {
   font-weight: 550;
   margin-bottom: 40px;
@@ -431,7 +434,7 @@ main {
     margin-bottom: 40px;
     margin-left: 10px;
     margin-top: 20px;
-    width: 100%;
+    width: 90vw;
   }
   .mid-section {
     margin-top: 20px;
